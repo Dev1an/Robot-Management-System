@@ -1,0 +1,15 @@
+[submodule "Web-application"]
+	path = Web-application
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Web-application/.git
+[submodule "node"]
+	path = node
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/RobotCommunication/node/.git
+[submodule "python"]
+	path = python
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/RobotCommunication/python/.git
+[submodule "zyre-db"]
+	path = zyre-db
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/RobotCommunication/go/src/github.com/dev1an/zyre-db/.git/
+[submodule "Web application"]
+	path = Web application
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Web application/.git
