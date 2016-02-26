@@ -13,3 +13,12 @@
 [submodule "Web application"]
 	path = Web application
 	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Web application/.git
+[submodule "Robot communication/node"]
+	path = Robot communication/node
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Robot communication/node/.git
+[submodule "Robot communication/python"]
+	path = Robot communication/python
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Robot communication/python/.git
+[submodule "Robot communication/go/src/github.com/dev1an/zyre-db"]
+	path = Robot communication/go/src/github.com/dev1an/zyre-db
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Robot communication/go/src/github.com/dev1an/zyre-db/.git
