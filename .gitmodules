@@ -22,3 +22,6 @@
 [submodule "Robot communication/go/src/github.com/dev1an/zyre-db"]
 	path = Robot communication/go/src/github.com/dev1an/zyre-db
 	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/RMS/Robot communication/go/src/github.com/dev1an/zyre-db/.git
+[submodule "Robot simulation"]
+	path = Robot simulation
+	url = /Users/Damiaan/Documents/Projecten/Stage-KUL/PnP-proxy
