@@ -25,6 +25,12 @@ cd "Web application"
 meteor
 ```
 
+### Robot discovery service
+```sh
+cd "Robot communication/python"
+python discoveryRethinkdb.py
+```
+
 ### Robot simulator
 ```sh
 cd "Robot simulation/python"
@@ -35,3 +41,6 @@ python line_controller.py
 cd "Robot simulation/python"
 python thermo_former.py
 ```
+
+### GUI
+Open a browser and navigate to localhost:3000
