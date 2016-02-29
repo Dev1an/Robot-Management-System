@@ -1,6 +1,3 @@
-# Robot-Management-System
-Realtime CMS for robots
-
 ## Usage
 
 ### Requirements
