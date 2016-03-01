@@ -6,7 +6,7 @@ To read the robot's zyre messages I made implementations in three different lang
 - Javascript
 - <b>Python</b>
 
-The most robust implementation for the moment is the pyhton implementation.
+The most robust implementation at the moment is the pyhton implementation.
 
 ## Go
 Altough Go is better suited for this kind of tasks, there is a [bug](https://github.com/zeromq/gyre/issues/39)

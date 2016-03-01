@@ -13,7 +13,15 @@ cd Database
 rethinkdb
 ```
 
-Create a table named "`devices`" in the "`test`" database
+Create two tables in the "`test`" database
+
+- `modules`
+  - add a secondary index: `uuid`
+- `events`
+  - add secondary indices:
+    - `sender_UUID`
+    - `timestamp`
+    - `type`
 
 ### Web server
 Run Meteor
