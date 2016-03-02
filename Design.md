@@ -12,6 +12,10 @@ A realtime web application that allows users to
 
 ##Design decisions
 
+### PnP application
+
+- How are we going to visualize the web of trays
+
 ###Robot communication
 
 - **Models for state machines:** Make a solid state machine model, that everyone in network will use.
