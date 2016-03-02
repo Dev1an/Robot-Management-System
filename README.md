@@ -30,7 +30,7 @@ cd "Web application"
 meteor
 ```
 
-### Robot discovery service
+### Database mediator
 ```sh
 cd "Robot communication/python"
 python discoveryRethinkdb.py
