@@ -1,15 +1,3 @@
-# Robot management system
-
-## Overview	
-
-A realtime web application that allows users to
-
-- View information about robots in the network. The information contains
-  - It's current state
-  - What it has done in the past
-  - What it will do in the future
-- Send information to the robots to update it's configuration
-
 ##Design decisions
 
 ### PnP application
