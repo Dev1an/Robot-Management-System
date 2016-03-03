@@ -10,9 +10,9 @@ A realtime web application that allows users to
 
 ### Requirements
 
-- RethinkDB
-- Meteor
-- Python
+- [RethinkDB](http://rethinkdb.com/docs/install/)
+- [Meteor](https://www.meteor.com/install)
+- [Python](https://www.python.org/downloads/)
 
 ### Database
 Run RethinkDB
