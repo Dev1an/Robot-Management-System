@@ -14,7 +14,7 @@ A realtime web application that allows users to
 - Meteor
 - Python
 
-###Database
+### Database
 Run RethinkDB
 ```sh
 cd Database
