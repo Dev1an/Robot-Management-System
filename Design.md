@@ -1,10 +1,10 @@
-##Design decisions
+## Design decisions
 
 ### PnP application
 
 - How are we going to visualize the web of trays
 
-###Robot communication
+### Robot communication
 
 - **Models for state machines:** Make a solid state machine model, that everyone in network will use.
 - **Which Zyre implementation:** The current one I use is the python script from Johan. Should I use another one
