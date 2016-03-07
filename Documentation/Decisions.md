@@ -1,6 +1,6 @@
 # Design decisions
 
-## System structure
+## Application structure
 
 The main application is generic and will visualize all the modules (and their events) in a common way.
 
