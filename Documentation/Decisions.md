@@ -3,7 +3,7 @@
 ## Robot communication
 
 ### Models for state machines:
-All modules use should use what we call the (hierarchical) life cycle state machine (aka LCSM) ![hierarchical lifecycle state machine](LifeCycleStateMachine-hierarchical.png)
+All modules use should use what we call the (hierarchical) life cycle state machine (aka LCSM) ![hierarchical lifecycle state machine](LifeCycleStateMachine-hierarchical.svg)
 
 ### Which Zyre implementation:
 UNCLEAR: The current one I use is the python script from Johan. Should I use another one
