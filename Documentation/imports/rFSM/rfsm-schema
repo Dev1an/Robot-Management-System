@@ -1,0 +1,66 @@
+{
+  "id": "http://people.mech.kuleuven.be/~u0072295/rFSM/rfsm-schema",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "properties": {
+    "type": { "enum": ["rfsm_model"] },
+    "version": { "type": "number" },
+    "rfsm" : {
+      "$ref" : "#/definitions/state"
+    }
+   },
+   "required" : ["type", "version", "rfsm"],
+   "additionalProperties" : false,
+   "definitions" : {
+     "container" : {
+       "oneOf": [
+         { "$ref": "#/definitions/state" },
+         { "$ref": "#/definitions/connector" }
+       ]
+     },
+     "state" : {
+       "type" : "object",
+       "properties": {
+         "type" : { "enum": ["state"] },
+         "id": { "type": "string" },
+         "entry": { "type": "string" },
+         "exit": { "type": "string" },
+         "transitions" : {
+           "type": "array",
+           "items": { "$ref": "#/definitions/transition" },
+           "minItems": 1
+         },
+         "containers" : {
+           "type": "array",
+           "items": { "$ref": "#/definitions/container" }
+         }
+       },
+       "required" : [ "id", "type" ],
+       "additionalProperties" : false
+     },
+     "connector": {
+       "type" : "object",
+       "properties": {
+         "id" : { "type": "string" },
+         "type" : { "enum": ["connector"] }
+       },
+       "required" : [ "id", "type"],
+       "additionalProperties" : false
+     },
+     "transition": {
+       "type": "object",
+       "properties": {
+         "type" : { "enum" : ["transition"] },
+         "tgt": { "type": "string" },
+         "src": { "type": "string" },
+         "events": {
+           "type": "array",
+           "items": { "$ref": "#/definitions/event" }
+         }
+       },
+       "required" : [ "tgt", "src", "type" ],
+       "additionalProperties" : false
+     },
+     "event" : { "type": "string"}
+   }
+}

@@ -1,0 +1,20 @@
+{
+  "type":"rfsm_model",
+  "version":2,
+  "active_leaf_state":false,
+  "active_leaf":false,
+  "rfsmgraph": {
+    "id":"root",
+    "type":"state",
+    "transitions": [
+        { "type" : "transition", "tgt": "root.hello", "src": "root.initial", "events": [] },
+        { "type" : "transition", "tgt": "root.world", "src": "root.hello", "events": ["e_done@root.hello"] },
+        { "type" : "transition", "tgt": "root.hello", "src": "root.world", "events": ["e_restart"] }
+      ],
+    "subnodes": [
+        {"id": "hello", "type": "state"},
+        {"id": "initial", "type": "connector"},
+        {"id": "world", "type": "state"}
+      ]
+  }
+}

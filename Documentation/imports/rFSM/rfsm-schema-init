@@ -1,0 +1,66 @@
+{
+  "id": "http://people.mech.kuleuven.be/~u0072295/rFSM/rfsm-schema-init",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+      "type": { "enum": ["rfsm_model"] },
+      "version": {
+        "type": "number"
+      },
+      "active_leaf_state" : {
+        "type": "boolean"
+      },
+      "active_leaf": {
+        "type": "boolean"
+      },
+      "rfsmgraph": { 
+        "$ref" : "#/definitions/rfsmgraph"
+      }
+  },
+  "required" : ["type","version", "active_leaf", "active_leaf_state", "rfsmgraph"],
+  "definitions": {
+    "rfsmgraph": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type": "string"
+        },
+        "type" : {
+          "enum" : [ "state","transition"]
+        },
+        "transitions": { "$ref" : "#/definitions/transitions" },
+        "subnodes": { "$ref" : "#/definitions/subnodes" }
+      }
+    },
+    "transitions" : {
+      "type": "array",
+      "items": { "$ref": "#/definitions/transition" }
+    },
+    "subnodes" : {
+      "type": "array",
+      "items": { "$ref" : "#/definitions/subnode" }
+    },
+    "subnode" : {
+      "type": "object",
+      "properties": {
+        "id": { "type" : "string" },
+        "type": { "enum": [ "state", "connector"] }
+      }
+    },
+    "transition": {
+      "type": "object",
+      "properties": {
+        "type" : { "enum": [ "transition" ] },
+        "tgt": { "type": "string" },
+        "src": { "type": "string" },
+        "events": { 
+          "type": "array",
+          "items": { "$ref": "#/definitions/event" }
+        }
+      }
+    },
+    "event" : {
+      "type": "string"
+    }
+  }
+}
