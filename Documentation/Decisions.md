@@ -4,19 +4,21 @@
 
 The main application is generic and will visualize all the modules (and their events) in a common way.
 
-Extensions can be written to provide better (more specific) visualizations adapted a certain project/robot.
+Extensions can be written to provide better (more specific) visualizations adapted to a certain project/robot.
 
 ## Robot communication
 
 ### Models for state machine
-All modules use should use what we call the (hierarchical) life cycle state machine (aka LCSM)![hierarchical lifecycle state machine](imports/LifeCycleStateMachine-hierarchical.png)
+All modules should use what we call the (hierarchical) lifecycle state machine (aka LCSM)![hierarchical lifecycle state machine](imports/LifeCycleStateMachine-hierarchical.png)
 
 Once in the “active” state, the module should be discoverable on the network (setting up the network should be done in the “configuring resources” state)
 
+UNCLEAR: "how" should the modules use this lifecycle state machine? How will they communicate transitions over the network?
+
 ### Which Zyre implementation
-UNCLEAR: The current one I use is the python script from Johan. Should I use another one
+UNCLEAR: The current one I use is the python script from Johan. Should I use another one?
 ### Policy for tracability requirement
-UNCLEAR: Should we define a policy so that the zyre<->database mediator can communicate whether it is ready to log the events into the database? This can then be used by modules to ensure tracibility.
+UNCLEAR: Should we define a policy so that the zyre <-> database mediator can communicate whether it is ready to log the events into the database? This can then be used by modules to ensure tracibility.
 
 ## Database
 
