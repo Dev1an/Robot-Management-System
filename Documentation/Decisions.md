@@ -2,12 +2,12 @@
 
 ## Robot communication
 
-###Models for state machines:
+### Models for state machines:
 All modules use should use what we call the (hierarchical) life cycle state machine (aka LCSM) ![hierarchical lifecycle state machine](LifeCycleStateMachine-hierarchical.png)
 
-###Which Zyre implementation:
+### Which Zyre implementation:
 UNCLEAR: The current one I use is the python script from Johan. Should I use another one
-###Policy for tracability requirement:
+### Policy for tracability requirement:
 UNCLEAR: Should we define a policy so that the zyre<->database mediator can communicate whether it is ready to log the events into the database? This can then be used by modules to ensure tracibility.
 
 ## Database
