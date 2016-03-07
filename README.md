@@ -58,6 +58,6 @@ python thermo_former.py
 ### GUI
 Open a browser and navigate to localhost:3000
 
-![Zyre events](Screenshots/Zyre events.png)
+![Zyre events](Screenshots/Zyre-events.png)
 
 ![Thermoformer-visualisation](Screenshots/Thermoformer-visualisation.png)
