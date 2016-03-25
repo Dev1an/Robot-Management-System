@@ -35,7 +35,7 @@ Create two tables in the "`test`" database
 Run Meteor
 ```sh
 cd "Web application"
-meteor
+meteor --settings ../Configuration/webapplication.json
 ```
 
 ### Database mediator

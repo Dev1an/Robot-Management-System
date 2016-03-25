@@ -1,0 +1,5 @@
+{
+  "databaseConfiguration": {
+    "RethinkDB": {"host": "localhost", "port": 28015}
+  }
+}

@@ -5,3 +5,4 @@ Robot communication/go/src/*
 !Robot communication/go/src/github.com
 Robot communication/go/src/github.com/*
 !Robot communication/go/src/github.com/dev1an
+.DS_Store
