@@ -16,9 +16,19 @@ they share. One component can be in multiple groups.
 
  ![ArchitectureGraphConcept](imports/ArchitectureGraphConcept.jpg)
 
+There is a robot network where individual modules communicate using the Zyre protocol. A *logger* module is added to this network to save only the necessary messages to a database.
+
+On the other side there is a web application server that subscribes to realtime updates from the database. When browsers connect to this server, a subset of these realtime messages are redirected to the browser depending on the needs of the user. A user can also subscribe to older data that is stored in the database.
+
 ### Implementation
 
  ![ArchitectureGraphImplementation](imports/ArchitectureGraphImplementation.jpg)
+
+The robots are simulated via python scripts in the `/Robot simulation` directory. Their communication is captured by another python script (the logger) located in the `/Robot Communication` directory. This logger connects to a rethinkDB via a TCP socket.
+
+Both the client- and server-side of the web application are written in javascript (they are located in the `/Web application` directory). This allows us to reuse code that is needed for both the client and the server. The serverside code runs in a NodeJS runtime and the clientside code in a browser.
+
+The server connects to one or more rethinkDB's via a tcp socket. An HTTP connection is used to send the client-side application to the browsers. Once this application is loaded in the browser a websocket connection is established between the server and the browser so that they can communicate back and forth over one single connection.
 
 ## Communication
 
