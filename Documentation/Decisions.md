@@ -12,7 +12,9 @@ they share. One component can be in multiple groups.
 
 ## Architecture
 
- ### Concept![ArchitectureGraphConcept](imports/ArchitectureGraphConcept.jpg)
+### Concept
+
+ ![ArchitectureGraphConcept](imports/ArchitectureGraphConcept.jpg)
 
 ### Implementation
 
