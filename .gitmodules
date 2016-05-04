@@ -6,7 +6,7 @@
 	url = git@gitlab.mech.kuleuven.be:r0449223/zyre-rethinkdb-mediator-in-nodejs.git
 [submodule "Robot communication/python"]
 	path = Robot communication/python
-	url = https://r0449223@gitlab.mech.kuleuven.be/r0449223/PnP-proxy.git
+	url = git@gitlab.mech.kuleuven.be:r0449223/robot-communication.git
 [submodule "Robot communication/go/src/github.com/dev1an/zyre-db"]
 	path = Robot communication/go/src/github.com/dev1an/zyre-db
 	url = git@gitlab.mech.kuleuven.be:r0449223/zyre-rethinkdb-mediator-in-go.git
