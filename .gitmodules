@@ -1,6 +1,6 @@
 [submodule "Web application"]
 	path = Web application
-	url = https://r0449223@gitlab.mech.kuleuven.be/r0449223/web-application.git
+	url = git@gitlab.mech.kuleuven.be:r0449223/web-application.git
 [submodule "Robot communication/node"]
 	path = Robot communication/node
 	url = git@gitlab.mech.kuleuven.be:r0449223/zyre-rethinkdb-mediator-in-nodejs.git
@@ -12,4 +12,4 @@
 	url = git@gitlab.mech.kuleuven.be:r0449223/zyre-rethinkdb-mediator-in-go.git
 [submodule "Robot simulation"]
 	path = Robot simulation
-	url = https://r0449223@gitlab.mech.kuleuven.be/r0449223/PnP-proxy.git
+	url = git@gitlab.mech.kuleuven.be:r0449223/PnP-proxy.git
