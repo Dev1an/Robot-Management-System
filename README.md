@@ -41,7 +41,7 @@ meteor --settings ../Configuration/webapplication.json
 ### Database mediator
 ```sh
 cd "Robot communication/python"
-python discoveryRethinkdb.py
+python RethinkdbMediator.py
 ```
 
 ### Robot simulator
