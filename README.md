@@ -33,9 +33,19 @@ Create two tables in the "`test`" database
     - `type`
 
 ### Web server
+
+Install npm modules
+
+```shell
+cd "Web application/server"
+meteor npm install
+cd ../client
+meteor npm install
+```
+
 Run Meteor
+
 ```sh
-cd "Web application"
 meteor --settings ../Configuration/webapplication.json
 ```
 
