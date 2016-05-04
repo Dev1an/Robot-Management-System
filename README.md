@@ -17,6 +17,7 @@ A realtime web application that allows users to
 ### Database
 Run RethinkDB
 ```sh
+mkdir Database
 cd Database
 rethinkdb
 ```
