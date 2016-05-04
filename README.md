@@ -41,6 +41,7 @@ cd "Web application/server"
 meteor npm install
 cd ../client
 meteor npm install
+cd ../
 ```
 
 Run Meteor
