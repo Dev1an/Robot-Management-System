@@ -11,6 +11,8 @@ A realtime web application that allows users to
 ### Requirements
 
 - [RethinkDB](http://rethinkdb.com/docs/install/)
+  - Make sure your rethinkDB version is compatible with the version of the rethinkDB nodeJS driver (listed in `Web application/server/package.json` under dependencies).
+
 - [Meteor](https://www.meteor.com/install)
 - [Python](https://www.python.org/downloads/)
 
